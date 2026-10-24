@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.beggar-bot-x402/beggar-bot-mcp",
+  "title": "Beggar Bot",
+  "description": "x402 utilities on Base: USDC payment verification, risk scores, signed receipts ($0.01 USDC/call).",
+  "repository": { "url": "https://github.com/beggar-bot-x402/beggar-bot-mcp", "source": "github" },
+  "websiteUrl": "https://beggar-bot-demand.beggarbot.workers.dev",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/beggar-bot-x402/beggar-bot-mcp/releases/download/v0.1.0/beggar-bot-mcp-0.1.0.mcpb",
+      "fileSha256": "d3b8d23afc8fe3e743ec86d3d49e84d60213df531084bd7cbe0ad44d54d9d536",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}

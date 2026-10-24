@@ -1,0 +1,20 @@
+{
+  "manifest_version": "0.2",
+  "name": "beggar-bot-mcp",
+  "display_name": "Beggar Bot",
+  "version": "0.1.0",
+  "description": "x402 utilities on Base: USDC payment verification, risk scores, signed receipts ($0.01 USDC per paid call).",
+  "author": { "name": "Beggar Bot", "url": "https://github.com/beggar-bot-x402" },
+  "repository": { "type": "git", "url": "https://github.com/beggar-bot-x402/beggar-bot-mcp" },
+  "homepage": "https://github.com/beggar-bot-x402/beggar-bot-mcp",
+  "license": "MIT",
+  "server": { "type": "node", "entry_point": "index.js", "mcp_config": { "command": "node", "args": ["${__dirname}/index.js"] } },
+  "tools": [
+    {"name":"verify_payment","description":"Verify a USDC payment on Base (paid, $0.01 via x402)"},
+    {"name":"risk_score","description":"Risk score for a Base address or x402 endpoint (paid, $0.01 via x402)"},
+    {"name":"signed_receipt","description":"Ed25519-signed receipt for a Base USDC payment (paid, $0.01 via x402)"},
+    {"name":"verify_receipt","description":"Verify a Beggar Bot receipt signature (free)"}
+  ],
+  "keywords": ["mcp","x402","base","usdc"],
+  "compatibility": { "runtimes": { "node": ">=18.0.0" } }
+}
